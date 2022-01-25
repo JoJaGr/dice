@@ -1,0 +1,21 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>dice</title>
+</head>
+<body>
+    <div style="background-color: royalblue; text-align: center;">
+    <p>click here to get a random number</p>
+    <p id="one"></p>
+<button onclick="random()">Random</button>
+
+<script>
+ function random(){
+
+document.getElementById("one").innerHTML = Math.floor(Math.random() * 7);
+}
+</script>
+<p>Roll again if you get a 0</p>
+    </div>
+</body>
+</html>
